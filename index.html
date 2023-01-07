@@ -79,6 +79,7 @@
         margin: 4px 2px;
         cursor: pointer;
     }
+
     span {
         color: #FACD08;
         text-decoration: underline;
@@ -87,7 +88,11 @@
 
 <body>
     <h1>Tuna (The Singer)</h1>
-    <img class="tuna-img" src="tuna.jpg" alt="tuna photo">
+    <picture>
+        <source media="(min-width: 440px) and (max-width:850px)" srcset="tuna.jpg">
+        <source media="(min-width: 100px) and (max-width:400px)" srcset="tunaback.jpeg">
+        <img class="tuna-img" src="tuna.jpg" >
+    </picture>
     <div class="bio">
         <h3>Biography</h3>
         <p>
@@ -148,7 +153,7 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
 
-        <p> created by <span>YosKad&trade;</span></p>
+    <p> created by <span>YosKad&trade;</span></p>
 </body>
 
 </html>
